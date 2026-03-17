@@ -16,8 +16,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-	url: "https://github.com/leonard-li/YF_Utils_SPM.git", 
-	.exact: "1.2.7"
+	    url: "https://github.com/leonard-li/YF_Utils_SPM.git", 
+	    exact: "1.2.7"
 	)
     ],
     targets: [
