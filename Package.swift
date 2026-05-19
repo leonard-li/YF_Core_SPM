@@ -14,7 +14,6 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "YF_Utils",
             url: "https://github.com/leonard-li/YF_Utils_SPM.git", 
             .from("1.2.9")
     )
@@ -24,7 +23,7 @@ let package = Package(
         name: "YF_Core_Target",
         dependencies: [
             "YF_Core_Binary",
-            .product(name: "YF_Utils", package: "YF_Utils_SPM")
+            .product(name: "YF_Utils", package: "YF_Utils")
         ]
         ),
         .binaryTarget(
