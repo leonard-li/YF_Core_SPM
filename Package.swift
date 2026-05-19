@@ -15,16 +15,16 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/leonard-li/YF_Utils_SPM.git", 
-            .from("1.2.9")
+            from: "1.2.9"
     )
     ],
     targets: [
         .target(
-        name: "YF_Core_Target",
-        dependencies: [
-            "YF_Core_Binary",
-            .product(name: "YF_Utils", package: "YF_Utils")
-        ]
+            name: "YF_Core_Target",
+            dependencies: [
+                "YF_Core_Binary",
+                .product(name: "YF_Utils", package: "YF_Utils")
+            ]
         ),
         .binaryTarget(
             name: "YF_Core_Binary",
