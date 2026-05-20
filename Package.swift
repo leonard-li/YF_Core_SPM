@@ -23,7 +23,7 @@ let package = Package(
             name: "YF_Core_Target",
             dependencies: [
                 "YF_Core_Binary",
-                .product(name: "YF_Utils", package: "YF_Utils")
+                .product(name: "YF_Utils", package: "YF_Utils_SPM")
             ]
         ),
         .binaryTarget(
