@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "YF_Core",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "YF_Core",
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/leonard-li/YF_Utils_SPM.git", 
-            from: "1.2.9"
+            from: "1.3.0"
     )
     ],
     targets: [
@@ -28,8 +28,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "YF_Core_Binary",
-            url: "https://mvn.yifants.cn/artifactory/fineboost-spm/core/1.7.2/YFCore.xcframework.zip",
-            checksum: "5736d0dee9b8eef3d044d6b368aefcd4db92114df5d0deab7323f2ce16a45b26"
+            url: "https://mvn.yifants.cn/artifactory/fineboost-spm/core/1.7.3/YFCore.xcframework.zip",
+            checksum: "279664c62ad66b64037b9ac30a3c7750e50b1ce45e1e925b39dbffcd8a2c2b88"
         )
     ]
 )
